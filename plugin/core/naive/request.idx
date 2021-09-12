@@ -1,0 +1,24 @@
+NativeRequest	core/naive/request.html#NativeRequest	request: NativeRequest	
+Request	core/naive/request.html#Request	request: Request	
+url	core/naive/request.html#url,Request	request: url(request: Request): Uri	
+port	core/naive/request.html#port,Request	request: port(request: Request): string	
+path	core/naive/request.html#path,Request	request: path(request: Request): string	
+stripPath	core/naive/request.html#stripPath,Request	request: stripPath(request: var Request)	
+query	core/naive/request.html#query,Request	request: query(request: Request): string	
+scheme	core/naive/request.html#scheme,Request	request: scheme(request: Request): string	
+setScheme	core/naive/request.html#setScheme,Request,string	request: setScheme(request: var Request; value: string)	
+body	core/naive/request.html#body,Request	request: body(request: Request): string	
+headers	core/naive/request.html#headers,Request	request: headers(request: Request): HttpHeaders	
+reqMethod	core/naive/request.html#reqMethod,Request	request: reqMethod(request: Request): HttpMethod	
+getCookie	core/naive/request.html#getCookie,Request,string,string	request: getCookie(request: Request; key: string; default = &quot;&quot;): string	
+contentType	core/naive/request.html#contentType,Request	request: contentType(request: Request): string	
+charset	core/naive/request.html#charset,Request	request: charset(request: Request): string	
+secure	core/naive/request.html#secure,Request	request: secure(request: Request): bool	
+hostName	core/naive/request.html#hostName,Request	request: hostName(request: Request): string	
+send	core/naive/request.html#send,Request,string	request: send(request: Request; content: string): Future[void]	
+respond	core/naive/request.html#respond,Request,HttpCode,string	request: respond(request: Request; code: HttpCode; body: string): Future[void]	
+respond	core/naive/request.html#respond,Request,HttpCode,string,ResponseHeaders	request: respond(request: Request; code: HttpCode; body: string; headers: ResponseHeaders): Future[\n    void]	
+respond	core/naive/request.html#respond,Request,Response	request: respond(request: Request; response: Response): Future[void]	
+initRequest	core/naive/request.html#initRequest,Request	request: initRequest(nativeRequest: NativeRequest; cookies = initCookieJar();\n            pathParams = newStringTable(modeCaseSensitive);\n            queryParams = newStringTable(modeCaseSensitive);\n            postParams = newStringTable(modeCaseSensitive)): Request	
+close	core/naive/request.html#close,Request	request: close(request: Request)	
+initMockingRequest	core/naive/request.html#initMockingRequest,HttpMethod,HttpHeaders,Uri	request: initMockingRequest(httpMethod: HttpMethod; headers: HttpHeaders; url: Uri;\n                   cookies = initCookieJar(); postParams = newStringTable();\n                   queryParams = newStringTable(); formParams = initFormPart();\n                   pathParams = newStringTable()): Request	
